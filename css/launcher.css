@@ -1,0 +1,264 @@
+@charset "utf-8"; html, body, form, input, legend, label, select, option, button, fieldset, textarea, div, p, pre, blockquote, img, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: Open sans;
+    color: #fff;
+    overflow: hidden;
+}
+
+fieldset,img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul, dl, li {
+    list-style: none;
+}
+
+.blind {
+    position: absolute;
+    left: -3000px;
+    top: -3000px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.wrp_launcher {
+    width: 465px;
+    height: 465px;
+    background-color: #000;
+}
+
+.launcher {
+    overflow: hidden;
+    width: 465px;
+    height: 465px;
+    border: 1px solid #141d25;
+}
+
+.launcher .main_banner {
+    position: relative;
+    float: left;
+    border-right: 1px solid #141d25;
+    width: 488px;
+    height: 478px;
+}
+
+.launcher .main_banner .visual_slider {
+    z-index: 5;
+}
+
+.launcher .main_banner .bx-controls {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.launcher .main_banner .bx-controls a {
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+}
+
+.launcher .main_banner .bx-controls a:hover {
+    background-position: 0px -32px;
+}
+
+.launcher .main_banner .bx-controls .bx-prev {
+    margin-right: 10px;
+    background: url(../images/btn_prev.png) no-repeat;
+}
+
+.launcher .main_banner .bx-controls .bx-next {
+    background: url(../images/btn_next.png) no-repeat;
+}
+
+.launcher .contents {
+    position: relative;
+    width: 442px;
+    height: 440px;
+    float: left;
+    padding: 10px 10px;
+    background: #111;
+}
+
+.launcher .contents .top_bx {
+    clear: both;
+    overflow: hidden;
+    height: 55px;
+    margin-bottom: 10px;
+}
+
+.launcher .contents .menu_list {
+    float: left;
+    padding-top: 10px;
+}
+
+.launcher .contents .menu_list li {
+    float: left;
+    margin-left: 5px;
+}
+
+.launcher .contents .menu_list li:first-child {
+    margin-left: 0px;
+}
+
+.launcher .contents .menu_list li a {
+    display: block;
+    width: 105px;
+    height: 30px;
+    background: url(../images/btn_red.jpg) center -7px no-repeat;
+    color: #ffe1ca;
+    font-size: 14px;
+    text-align: center;
+    line-height: 28px;
+}
+
+.launcher .contents .menu_list li a:hover {
+    background: url(../images/btn_red_over.jpg) no-repeat;
+}
+
+.launcher .contents .game_grade {
+    float: right;
+    width: 91px;
+    height: 50px;
+    background: url(../images/bg_grade.jpg) no-repeat;
+}
+
+.launcher .contents .noti_list {
+    padding-bottom: 22px;
+    float: left;
+    width: 48%;
+    margin-left: 2%;
+}
+
+.launcher .contents .noti_list dt {
+    overflow: hidden;
+    padding-bottom: 7px;
+    margin-bottom: 5px;
+    color: #fff;
+    border-bottom: 1px solid #b02323;
+    font-weight: bold;
+}
+
+.launcher .contents .noti_list dt span {
+    display: block;
+    float: left;
+}
+
+.launcher .contents .noti_list dt a {
+    display: block;
+    float: right;
+    width: 70px;
+    height: 16px;
+    background-color: #b02323;
+    border: 1px solid #b02323;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.launcher .contents .noti_list dd {
+    padding-left: 10px;
+    background: url(../images/ico_list_r.gif) 0px 12px no-repeat;
+}
+
+.launcher .contents .noti_list dd a {
+    overflow: hidden;
+    display: block;
+    color: #ff0000;
+    line-height: 1.7em;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    display: grid;
+}
+
+.launcher .contents .noti_list dd a:hover {
+    color: #b02323;
+}
+
+.launcher .contents .noti_list dd.important a {
+    color: #b02323;
+}
+
+.launcher .contents .ad_link {
+    position: absolute;
+    bottom: 10px;
+    left: 19px;
+    display: block;
+}
+
+/*blue launcher*/
+.launcher.blue .main_banner .bx-controls .bx-prev {
+    margin-right: 10px;
+    background: url(../images/btn_prev_blue.png) no-repeat;
+}
+
+.launcher.blue .main_banner .bx-controls .bx-next {
+    background: url(../images/btn_next_blue.png) no-repeat;
+}
+
+.launcher.blue .main_banner .bx-controls a:hover {
+    background-position: 0px -32px;
+}
+
+.launcher.blue .contents .menu_list li a {
+    display: block;
+    width: 110px;
+    height: 440px;
+    background: url(../images/btn_blue.jpg) no-repeat;
+    color: #d8cabf;
+    font-size: 14px;
+    text-align: center;
+    line-height: 44px;
+}
+
+.launcher.blue .contents .menu_list li a:hover {
+    background: url(../images/btn_blue_over.jpg) no-repeat;
+}
+
+.launcher.blue .contents .noti_list dt {
+    border-bottom: 1px solid #2371b0;
+}
+
+.launcher.blue .contents .noti_list dd {
+    background: url(../images/ico_list_b.gif) 0px 11px no-repeat;
+}
+
+.launcher.blue .contents .noti_list dd a:hover {
+    color: #2371b0;
+}
+
+.launcher.blue .contents .noti_list dd.important a {
+    color: #2371b0;
+}
+
+.launcher.blue .contents .noti_list dt a {
+    background-color: #2371b0;
+    border: 1px solid #2371b0;
+    border-radius: 2px;
+}
+.thongbao a span {
+    color: #00ff5f;
+    padding-right: 10px;
+}
+.huongdan a span {
+    color: #00ffd0;
+    padding-right: 10px;
+}
